@@ -20,6 +20,10 @@
   h2 { font-size:18px; margin:28px 0 6px; }
   p, li { color: var(--muted); }
   .meta { font-size:14px; }
+  .summary { margin:16px 0; padding:14px 16px; border:1px solid var(--line); border-radius:14px; color:var(--fg); }
+  .toc ol { padding-left:22px; margin:6px 0 0; }
+  .toc li { margin:3px 0; }
+  .toc a { text-decoration:none; }
   ul { padding-left:20px; }
   /* Без скриптов: по умолчанию виден русский, ссылка #uz показывает узбекский.
      Разделы в разметке идут перед nav, поэтому переключатель стоит сверху
@@ -32,136 +36,211 @@
   #uz:target ~ #ru { display:none; }
   nav a[href="#ru"], #uz:target ~ nav a[href="#uz"] { border-color:var(--accent); }
   #uz:target ~ nav a[href="#ru"] { border-color:var(--line); }
+  /* Ссылки оглавления узбекской версии ведут на её разделы — она остаётся открытой. */
+  #uz:has(:target) { display:block; }
+  #uz:has(:target) ~ #ru { display:none; }
+  #uz:has(:target) ~ nav a[href="#uz"] { border-color:var(--accent); }
+  #uz:has(:target) ~ nav a[href="#ru"] { border-color:var(--line); }
 </style>
 </head>
 <body>
 <section id="uz" lang="uz">
 <h1>Gomi maxfiylik siyosati</h1>
-<p class="meta">2026-yil 24-noyabr tahriri</p>
-<h2>Biz kimmiz</h2>
-<p>Gomi — klubda birga oʻynash uchun sherik topadigan ilova. Bu siyosatda qanday maʼlumotlarni olishimiz, ular nima uchun kerakligi, qayerda va qancha vaqt saqlanishi hamda siz ular bilan nima qila olishingiz yozilgan. Siyosat Oʻzbekiston Respublikasining «Shaxsga doir maʼlumotlar toʻgʻrisida»gi Qonuniga muvofiq tuzilgan.</p>
+<p class="meta">2026-yil 28-noyabr tahriri, shu kundan kuchga kiradi</p>
+<div class="summary"><strong>Qisqacha.</strong> Biz eng kam maʼlumot saqlaymiz: nik, oʻyinlardagi daraja, rasm (agar qoʻshgan boʻlsangiz), Telegram yoki Apple orqali kirish maʼlumotlari, oʻyinlarga yozilishlaringiz va Gomi balansi. Oʻyinchidan telefon raqamini soʻramaymiz, bank kartasi maʼlumotlari va joylashuvingizni saqlamaymiz, reklama koʻrsatmaymiz va maʼlumotlarni reklama beruvchilarga bermaymiz. Akkauntni istalgan vaqtda ilovada oʻchirish mumkin.</div>
+<div class="toc"><p><strong>Mundarija</strong></p><ol>
+<li><a href="#uz-1">Biz kimmiz</a></li>
+<li><a href="#uz-2">Qanday maʼlumotlarni saqlaymiz, ular qayerdan va nima uchun</a></li>
+<li><a href="#uz-3">Nimalarni yigʻmaymiz</a></li>
+<li><a href="#uz-4">Maqsadlar va huquqiy asoslar</a></li>
+<li><a href="#uz-5">Boshqalar nimani koʻradi</a></li>
+<li><a href="#uz-6">Klublar, egalari va administratorlari</a></li>
+<li><a href="#uz-7">Avtomatik cheklovlar</a></li>
+<li><a href="#uz-8">Gomi xabarlari</a></li>
+<li><a href="#uz-9">Qaysi xizmatlar maʼlumot oladi</a></li>
+<li><a href="#uz-10">Maʼlumotlar qayerda saqlanadi va qanday himoya qilinadi</a></li>
+<li><a href="#uz-11">Maʼlumotlarni qancha saqlaymiz</a></li>
+<li><a href="#uz-12">Sizning huquqlaringiz</a></li>
+<li><a href="#uz-13">Akkauntni oʻchirish</a></li>
+<li><a href="#uz-14">Yosh</a></li>
+<li><a href="#uz-15">Sayt</a></li>
+<li><a href="#uz-16">Oʻzgarishlar</a></li>
+<li><a href="#uz-17">Biz bilan aloqa</a></li>
+</ol></div>
+<h2 id="uz-1">1. Biz kimmiz</h2>
+<p>Gomi — klubda birga oʻynash uchun sherik topadigan ilova. Bu siyosatda qanday maʼlumotlarni olishimiz, ular nima uchun kerakligi, qayerda va qancha vaqt saqlanishi hamda siz ular bilan nima qila olishingiz yozilgan. Siyosat Oʻzbekiston Respublikasining «Shaxsga doir maʼlumotlar toʻgʻrisida»gi ZRU-547-son Qonuniga muvofiq tuzilgan va bir vaqtning oʻzida maʼlumotlardan foydalanish maqsadlari va huquqlaringiz haqida xabardor qiladi.</p>
 <p>Maʼlumotlar bazasining egasi va operatori — Gomi ilovasini yaratgan jismoniy shaxs (Oʻzbekiston Respublikasi). Maʼlumotlarni qayta ishlash va himoya qilish uchun ham u javob beradi. Aloqa: <a href="mailto:iskandarnishonov@yandex.com.">iskandarnishonov@yandex.com.</a> Ism va pochta manzilini soʻrovingizga koʻra aytamiz.</p>
-<h2>Qanday maʼlumotlarni saqlaymiz</h2>
+<h2 id="uz-2">2. Qanday maʼlumotlarni saqlaymiz, ular qayerdan va nima uchun</h2>
 <ul>
-<li>Nikingiz va har bir oʻyindagi darajangiz — oʻzingiz koʻrsatgandek.</li>
-<li>Oʻyindan keyingi javoblaringiz («juda qiyin / ayni muddao / juda oson») va raqiblaringiz darajasiga bergan baholaringiz. Siz haqingizdagi baholarni hech kim koʻrmaydi: Gomi ularga qarab faqat darajani oʻzgartirishni taklif qiladi.</li>
-<li>Profil rasmi — agar uni yuklagan boʻlsangiz yoki u Telegramdan olingan boʻlsa.</li>
-<li>Telegram akkauntingiz raqami, foydalanuvchi nomi va ismingiz — Telegram bilan kirganingizda.</li>
-<li>Apple ID identifikatori — iPhoneʼda Apple bilan kirganingizda. Appleʼdagi ism va pochtangizni soʻramaymiz.</li>
-<li>Oʻyinlarga yozilishlaringiz, «Oʻyinchi kerak» eʼlonlari va ularga javoblar, klubda belgilanganingiz (jumladan, kimning QR-kodi bilan) va kelmay qolgan oʻyinlaringiz.</li>
-<li>Gomi balansi tarixi: kirim, chiqim va qaytarilgan pullar.</li>
-<li>Ilova tili.</li>
-<li>Shoshilinch bildirishnomalar («Oʻyinchi kerak» va SOS) uchun tanlagan shahar, tuman, oʻyin va klublaringiz — agar ularni yoqqan boʻlsangiz.</li>
-<li>Klubni roʻyxatdan oʻtkazsangiz — uning nomi, manzili, rasmi va telefoni.</li>
+<li>Nik va har bir oʻyindagi daraja — oʻzingiz koʻrsatasiz. Boshqalar kim kelishini koʻrishi va bir xil darajadagi oʻyinchilarni topish uchun.</li>
+<li>Oʻyindan keyingi javoblar («juda qiyin / ayni muddao / juda oson») va raqiblar darajasiga baholar — oʻzingiz kiritasiz. Siz haqingizdagi baholarni hech kim koʻrmaydi: Gomi ularga qarab faqat darajani oʻzgartirishni taklif qiladi.</li>
+<li>Profil rasmi — oʻzingiz yuklaysiz yoki u Telegramdan olinadi, ixtiyoriy. Yuklashdan oldin ilova rasmdan kameraning xizmat maʼlumotlarini, jumladan suratga olingan joy koordinatalarini olib tashlaydi. Ilova rasmsiz ham toʻliq ishlaydi.</li>
+<li>Telegram akkaunt raqami, foydalanuvchi nomi va ism — Telegram orqali kirganingizda Telegramdan. Kirish va bot xabarlari uchun.</li>
+<li>Apple ID identifikatori — iPhoneʼda Apple bilan kirganingizda Appleʼdan. Appleʼdagi ism va pochtangizni soʻramaymiz.</li>
+<li>Oʻyinlarga yozilishlar, bekor qilishlar, «Oʻyinchi kerak» eʼlonlari va ularga javoblar, klubda belgilanishlar (jumladan, kimning QR-kodi bilan) va kelmay qolishlar — Gomidan foydalanganingizda paydo boʻladi. Oʻyinlarni oʻtkazish, davomatni hisoblash va yozilish qoidalarini qoʻllash uchun.</li>
+<li>Gomi balansi tarixi: kirim, chiqim va qaytarilgan pullar — yozilish va bekor qilishda paydo boʻladi.</li>
+<li>Ilova tili — oʻzingiz tanlaysiz. Ilova va bot xabarlari sizning tilingizda boʻlishi uchun.</li>
+<li>Shoshilinch bildirishnomalar uchun shahar, tuman, oʻyinlar va klublar — agar ularni yoqqan boʻlsangiz.</li>
+<li>Klubni roʻyxatdan oʻtkazsangiz yoki uni boshqarishga yordam bersangiz: klubning nomi, manzili, rasmi va telefoni, shuningdek klub egasi va administratorlari kimligi.</li>
+<li>Serverning texnik jurnallari: soʻrov vaqti, IP-manzil va ilova haqidagi maʼlumotlar — ularni Supabase serverimiz yuritadi va qisqa muddat saqlaydi. Nosozliklarni topish va xizmatni hujumlardan himoya qilish uchun.</li>
 </ul>
-<h2>Nimalarni yigʻmaymiz</h2>
-<p>Oʻyinchilardan telefon raqami, pasport, biometrik va boshqa maxsus maʼlumotlarni soʻramaymiz. Telefon raqami faqat klubni roʻyxatdan oʻtkazishda kerak — bu klubning telefoni. Bank kartasi maʼlumotlari ilovada saqlanmaydi.</p>
+<h2 id="uz-3">3. Nimalarni yigʻmaymiz</h2>
+<p>Oʻyinchilardan telefon raqami, pochta, pasport, biometrik va boshqa maxsus maʼlumotlarni soʻramaymiz, telefon kontaktlarini oʻqimaymiz va reklama identifikatorlaridan foydalanmaymiz. Telefon raqami faqat klubni roʻyxatdan oʻtkazishda kerak — bu klubning telefoni. Bank kartasi maʼlumotlari ilovada saqlanmaydi. Gomida reklama yoʻq.</p>
 <p>Taxminiy joylashuvingiz faqat oʻzingiz «Avval eng yaqinlari»ni yoqsangiz ishlatiladi — yaqin klublarni koʻrsatish uchun. U faqat telefoningizda hisoblanadi, serverga yuborilmaydi va saqlanmaydi.</p>
-<p>Aniq joylashuv faqat boshqa oʻyinchining QR-kodi bilan klubda belgilanayotganingizda yoki «Oʻyinchi kerak» eʼlonini berayotganingizda soʻraladi: klub yonida ekaningizni tekshirish uchun koordinatalar bir marta serverga yuboriladi va hech qayerda saqlanmaydi. Klub administratorining kodi bilan belgilanishda joylashuv kerak emas.</p>
-<h2>Maʼlumotlar nima uchun kerak va qanday asosda</h2>
-<p>Oʻyinlarga yozilishingiz, klublar va boshqa oʻyinchilar kim kelishini bilishi uchun; balans va qaytarilgan pullarni hisoblash uchun; telefon almashtirsangiz ham akkauntingiz yoʻqolmasligi uchun; davomat koʻrsatkichini hisoblash va xizmatni suiisteʼmoldan himoya qilish uchun.</p>
-<p>Asos — ilovaning birinchi ekranida bergan roziligingiz va siz bilan tuzilgan shartnomani bajarish (oʻyinga yozilish). Maʼlumotlarni faqat shu maqsadlarda ishlatamiz.</p>
-<h2>Boshqalar nimani koʻradi</h2>
+<p>Aniq joylashuv faqat boshqa oʻyinchining QR-kodi bilan klubda belgilanayotganingizda yoki «Biz klubdamiz» rejimida «Oʻyinchi kerak» eʼlonini berayotganingizda soʻraladi: klub yonida ekaningizni tekshirish uchun koordinatalar bir marta serverga yuboriladi va hech qayerda saqlanmaydi. Klub administratorining kodi bilan belgilanishda va «Kompaniya yigʻyapmiz» eʼlonida joylashuv kerak emas.</p>
+<h2 id="uz-4">4. Maqsadlar va huquqiy asoslar</h2>
+<p>Maʼlumotlardan oʻyinlarga yozilishingiz, klublar va boshqa oʻyinchilar kim kelishini bilishi uchun; «Oʻyinchi kerak» eʼlonlari va kompaniya yigʻish uchun; balans va qaytarilgan pullarni hisoblash uchun; telefon almashtirsangiz ham akkauntingiz yoʻqolmasligi uchun; oʻyinlaringiz haqida xabar yuborish uchun; davomat koʻrsatkichini hisoblash va xizmatni suiisteʼmoldan himoya qilish uchun foydalanamiz.</p>
+<p>Asoslar:<br>• siz bilan tuzilgan shartnomani bajarish — oʻyinga yozilish, eʼlonlar, balans va oʻyinlaringiz haqidagi xabarlar;<br>• ilovaning birinchi ekranida bergan roziligingiz;<br>• qonun bizga yuklagan majburiyatlar;<br>• qonuniy manfaat — huquqlaringizni buzmagan holda xizmatning xavfsizligi va ishlashi.</p>
+<p>Maʼlumotlarni faqat shu maqsadlarda ishlatamiz. Yangi maqsad paydo boʻlsa, roziligingizni qaytadan soʻraymiz.</p>
+<h2 id="uz-5">5. Boshqalar nimani koʻradi</h2>
 <p>Boshqa oʻyinchilar va klublar nikingiz, rasmingiz, darajangiz, davomat koʻrsatkichingiz va qaysi oʻyinlarga yozilganingizni koʻradi. Balansingiz va Telegram maʼlumotlaringizni faqat oʻzingiz koʻrasiz.</p>
-<p>«Oʻyinchi kerak» eʼlonini bersangiz, oʻyinchilar nikingiz, klub va oʻyinni koʻradi; siz esa javob berganlarning niklari va ular kelgan-kelmaganini koʻrasiz. Klub kim boshqa oʻyinchining QR-kodi bilan belgilanganini va aynan kimnikini koʻradi.</p>
+<p>«Oʻyinchi kerak» eʼlonini bersangiz, oʻyinchilar nikingiz, klub, oʻyin, «Kompaniya yigʻyapmiz»da esa uchrashuv vaqtini ham koʻradi; siz javob berganlarning niklari va ular kelgan-kelmaganini koʻrasiz. Kompaniya yigʻilganda klub kompyuterlarni tayyorlashi uchun nikingiz va uchrashuv vaqti bilan xabar oladi. Klub kim boshqa oʻyinchining QR-kodi bilan belgilanganini va aynan kimnikini koʻradi.</p>
 <p>Tasdiqlangan klubning nomi, manzili, rasmi va telefonini barcha oʻyinchilar koʻradi — klubni topish va qoʻngʻiroq qilish uchun.</p>
-<h2>Klub arizalari</h2>
-<p>Klub uchun ariza topshirganingizda Gomi maʼmuriyati arizadagi maʼlumotlarni, shuningdek nikingiz, Telegram foydalanuvchi nomingiz va Gomida roʻyxatdan oʻtgan sanangizni koʻradi — klubni tekshirish va siz bilan bogʻlanish uchun.</p>
-<p>Ariza rad etilsa, uni klub telefoni va Telegram akkauntingiz raqami bilan birga bir yil saqlaymiz — xuddi shu arizani boshqa akkauntdan qayta topshirib boʻlmasligi uchun. Bu maʼlumotlarni faqat Gomi maʼmuriyati koʻradi. Bir yildan keyin ariza oʻzi oʻchib ketadi.</p>
+<h2 id="uz-6">6. Klublar, egalari va administratorlari</h2>
+<p>Klub uchun ariza topshirganingizda Gomi maʼmuriyati arizadagi maʼlumotlarni, shuningdek nikingiz, Telegram foydalanuvchi nomingiz va Gomida roʻyxatdan oʻtgan sanangizni koʻradi — klubni tekshirish va siz bilan bogʻlanish uchun. Klubni kim roʻyxatdan oʻtkazgan boʻlsa, oʻsha uning egasi.</p>
+<p>Smena administratori «Men shu klub administratoriman» tugmasi orqali klubga kirishni soʻrashi mumkin. Klub egasi uning nikini, Telegram foydalanuvchi nomini va soʻrov sanasini koʻradi, soʻrovni tasdiqlaydi yoki rad etadi va istalgan vaqtda administratorni olib tashlashi mumkin. Administratorlar klub oʻyinlarini, yozilishlar va belgilanishlarni koʻradi, lekin statistika, obuna va klub sozlamalarini koʻrmaydi.</p>
+<p>Klub arizasi rad etilsa, uni klub telefoni va Telegram akkauntingiz raqami bilan birga bir yil saqlaymiz — xuddi shu arizani boshqa akkauntdan qayta topshirib boʻlmasligi uchun. Bu maʼlumotlarni faqat Gomi maʼmuriyati koʻradi. Bir yildan keyin ariza oʻzi oʻchib ketadi.</p>
 <p>Klubni «Klubim → Klubni yopish» orqali yopish mumkin: oʻyinchilar uni boshqa koʻrmaydi, kelgusi oʻyinlar pullar qaytarilgan holda bekor qilinadi, oʻtgan oʻyinlar tarixi saqlanib qoladi.</p>
-<h2>Avtomatik cheklovlar</h2>
-<p>30 kun ichida bir necha marta yozilib kelmasangiz, ilova oʻyinlarga yozilishni vaqtincha oʻzi yopadi: 3 marta kelmasangiz — 3 kunga, 4 va undan koʻp marta — 7 kunga. Klubda belgilanmasangiz, «Oʻyinchi kerak»da esa kelganingizni oʻz vaqtida tasdiqlamasangiz, kelmagan hisoblanasiz. Har safar ilova cheklovgacha nechta qolganini aytib turadi. Kelmaslik yoki cheklovga rozi boʻlmasangiz, bizga yozing: tekshirib, 10 kun ichida javob beramiz.</p>
-<h2>Qaysi xizmatlar maʼlumot oladi</h2>
-<p>Biz maʼlumotlarni sotmaymiz va reklama uchun bermaymiz. Ilova ishlashi uchun quyidagi xizmatlardan foydalanamiz:<br>• Supabase — ilova maʼlumotlarini Yaponiyadagi serverlarda saqlaydi.<br>• Telegram — akkauntga kirish va Gomi botining xabarlari uchun: oʻyinlaringiz haqida eslatma va bildirishnomalar, yoqqan boʻlsangiz, shoshilinch bildirishnomalar ham.<br>• Apple — iPhoneʼda Apple bilan kirishni tanlagan boʻlsangiz.<br>• Yandex Xaritalar — klublar xaritasini koʻrsatadi. Xarita ochilganda Yandex qurilmangizning texnik maʼlumotlarini (masalan, IP-manzil va qurilma identifikatorini) olishi mumkin — bu Yandex shartlarida yozilgan.</p>
-<h2>Maʼlumotlar qayerda saqlanadi</h2>
+<h2 id="uz-7">7. Avtomatik cheklovlar</h2>
+<p>30 kun ichida bir necha marta yozilib kelmasangiz, ilova oʻyinlarga yozilishni vaqtincha oʻzi yopadi: 3 marta kelmasangiz — 3 kunga, 4 va undan koʻp marta — 7 kunga. Klubda belgilanmasangiz, «Oʻyinchi kerak»da esa kelganingizni oʻz vaqtida tasdiqlamasangiz, kelmagan hisoblanasiz. Har safar ilova cheklovgacha nechta qolganini aytib turadi.</p>
+<p>7 kun ichida yozilishni 3 martagacha bepul bekor qilish mumkin; yozilgandan keyingi dastlabki 5 daqiqadagi bekor qilish hisobga kirmaydi. Bir vaqtda ikkita oʻyinga yozilib boʻlmaydi.</p>
+<p>Kelmaslik yoki cheklovga rozi boʻlmasangiz, bizga yozing: tekshirib, 10 kun ichida javob beramiz.</p>
+<h2 id="uz-8">8. Gomi xabarlari</h2>
+<p>Telegramdagi Gomi boti va ilovadagi «Bildirishnomalar» boʻlimi faqat oʻyinlaringiz va akkauntingiz haqida xabar yuboradi: yozilish va bekor qilish, «Oʻyin boʻlib oʻtadi», eslatmalar, joy boʻshagani, klub oʻyinni bekor qilib pulni qaytargani, kelmaslik, «Kompaniya yigʻildi», klublarga esa — yozilishlar va arizalar haqida. «Oʻyinchi kerak» va SOS shoshilinch bildirishnomalari faqat ularni yoqqan boʻlsangiz keladi. Xabarlar ikki tilda keladi. Reklama xabarlari yoʻq.</p>
+<p>Shoshilinch bildirishnomalar «Profil»da oʻchiriladi. Telegramda umuman xabar olmaslik uchun Telegramda Gomi botini toʻxtating — ilova ishlashda davom etadi.</p>
+<h2 id="uz-9">9. Qaysi xizmatlar maʼlumot oladi</h2>
+<p>Biz maʼlumotlarni sotmaymiz va reklama uchun bermaymiz. Ilova ishlashi uchun quyidagi xizmatlardan foydalanamiz:<br>• Supabase — ilova maʼlumotlari va texnik jurnallarni Yaponiyadagi serverlarda saqlaydi.<br>• Telegram — akkauntga kirish va Gomi botining xabarlari uchun.<br>• Apple — iPhoneʼda Apple bilan kirishni tanlagan boʻlsangiz.<br>• Yandex Xaritalar — klublar xaritasini koʻrsatadi. Xarita ochilganda Yandex qurilmangizning texnik maʼlumotlarini (masalan, IP-manzil va qurilma identifikatorini) olishi mumkin — bu Yandex shartlarida yozilgan.</p>
+<p>Gomi ichida maʼlumotlarga faqat xizmat maʼmuriyati va faqat qoʻllab-quvvatlash hamda ilova ishlashi uchun kerakli hajmda kira oladi. Davlat organlariga maʼlumotlar faqat Oʻzbekiston Respublikasi qonunchiligida nazarda tutilgan hollarda qonuniy talab asosida beriladi.</p>
+<h2 id="uz-10">10. Maʼlumotlar qayerda saqlanadi va qanday himoya qilinadi</h2>
 <p>Maʼlumotlar Oʻzbekistondan tashqarida — Yaponiyadagi himoyalangan serverlarda saqlanadi. Yaponiya shaxsga doir maʼlumotlarni yetarli darajada himoya qiladigan xorijiy davlatlar roʻyxatiga kiritilgan (Oʻzbekiston Respublikasi Vazirlar Mahkamasining 2026-yil 29-iyuldagi 415-son qarori). Bu siyosatga rozi boʻlib, maʼlumotlaringiz u yerda saqlanishiga ham rozilik bildirasiz.</p>
-<p>Maʼlumotlarni himoya qilamiz: internet orqali ular faqat shifrlangan holda uzatiladi, har kim faqat oʻziga ruxsat berilgan narsani koʻradi, administratorlar esa faqat ishi uchun keraklisini.</p>
-<h2>Maʼlumotlarni qancha saqlaymiz</h2>
+<p>Maʼlumotlarni qanday himoya qilamiz:<br>• internet orqali maʼlumotlar faqat shifrlangan ulanishda (HTTPS) uzatiladi;<br>• kirish — parolsiz, imzolangan kirish kalitlari orqali;<br>• bazaning oʻzidagi kirish qoidalari: har kim faqat oʻziga ruxsat berilgan narsani koʻradi, maʼmuriyat esa — faqat ishi uchun keraklisini;<br>• profil rasmidan kameraning xizmat maʼlumotlari olib tashlanadi;<br>• bank kartasi maʼlumotlari bizga kelmaydi.</p>
+<p>Hech bir saqlash usuli mutlaq himoya bermaydi, lekin biz himoyani maʼlumotlar xususiyati va qonun talablariga mos darajada ushlab turamiz.</p>
+<h2 id="uz-11">11. Maʼlumotlarni qancha saqlaymiz</h2>
 <ul>
 <li>Profil, yozilishlar, belgilanishlar va balans — akkauntingiz bor ekan.</li>
+<li>Profil rasmi — yuklangan ekan; almashtirilsa yoki oʻchirilsa, oldingi fayl oʻchiriladi.</li>
+<li>Serverning texnik jurnallari — bir necha kun.</li>
 <li>Akkaunt oʻchirilgach — faqat Telegram akkaunt raqami yoki Apple ID identifikatori va kelmay qolgan oʻyinlar sanalari, 30 kungacha.</li>
 <li>Bonus olgan Telegram akkaunt raqami — muddatsiz (faqat raqamning oʻzi).</li>
 <li>Rad etilgan klub arizalari — bir yil.</li>
 <li>Yopilgan klubning oʻtgan oʻyinlari — qatnashchilarining akkauntlari bor ekan.</li>
 </ul>
-<h2>Sizning huquqlaringiz</h2>
-<p>Siz:<br>• bizda siz haqingizda qanday maʼlumotlar borligini va ular qanday ishlatilishini bilishingiz;<br>• profilda nik, daraja va rasmni oʻzgartirishingiz yoki boshqa maʼlumotlarni tuzatishni soʻrashingiz — uch kun ichida tuzatamiz;<br>• notoʻgʻri yoki keraksiz maʼlumotlardan foydalanishni vaqtincha toʻxtatishni soʻrashingiz;<br>• roziligingizni qaytarib olishingiz va akkauntni oʻchirishingiz;<br>• shaxsga doir maʼlumotlar boʻyicha vakolatli davlat organiga yoki sudga shikoyat qilishingiz mumkin.</p>
-<p>Soʻrovlarni <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> manziliga yuboring — 10 kun ichida javob beramiz. Akkaunt oʻchirilgach, yozilishlar va balansni tiklab boʻlmaydi.</p>
-<h2>Akkauntni oʻchirish</h2>
-<p>Akkauntni oʻzingiz oʻchira olasiz: ilovada «Profil»ni oching, yuqoridagi rasmingiz va nikingizni bosing, soʻng «Akkauntni oʻchirish»ni tanlang. Profilingiz, yozilishlaringiz, balans tarixi, Telegram va Apple bilan bogʻlanish oʻchiriladi, kelgusi yozilishlar bekor qilinadi. Gomi balansidagi pul kuyib ketadi. Apple bilan kirishni Appleʼning oʻzida bekor qilamiz — Gomi iPhone sozlamalaridagi «Apple bilan kirish» roʻyxatidan yoʻqoladi.</p>
+<p>Muddat tugagach, maʼlumotlar oʻchiriladi yoki shaxssizlashtiriladi.</p>
+<h2 id="uz-12">12. Sizning huquqlaringiz</h2>
+<p>«Shaxsga doir maʼlumotlar toʻgʻrisida»gi Qonunning 30-moddasiga koʻra siz:<br>• bizda siz haqingizda qanday maʼlumotlar borligini va ular qanday ishlatilishini bilishingiz;<br>• profilda nik, daraja va rasmni oʻzgartirishingiz yoki boshqa maʼlumotlarni tuzatishni soʻrashingiz — uch kun ichida tuzatamiz;<br>• toʻliq boʻlmagan, eskirgan yoki notoʻgʻri maʼlumotlardan foydalanishni vaqtincha toʻxtatishni soʻrashingiz;<br>• qonunni buzgan holda ishlatilayotgan maʼlumotlarni oʻchirishni talab qilishingiz;<br>• roziligingizni qaytarib olishingiz va akkauntni oʻchirishingiz;<br>• shaxsga doir maʼlumotlar boʻyicha vakolatli davlat organiga — Oʻzbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Davlat personallashtirish markaziga — yoki sudga shikoyat qilishingiz mumkin.</p>
+<p>Soʻrovlarni <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> manziliga yuboring — 10 kun ichida javob beramiz. Maʼlumotlaringizni himoya qilish uchun akkaunt egasi ekaningizni tasdiqlashni soʻrashimiz mumkin, masalan, oʻsha Telegramdan yozishni. Akkaunt oʻchirilgach, yozilishlar va balansni tiklab boʻlmaydi.</p>
+<h2 id="uz-13">13. Akkauntni oʻchirish</h2>
+<p>Akkauntni oʻzingiz oʻchira olasiz: ilovada «Profil»ni oching, yuqoridagi rasmingiz va nikingizni bosing, soʻng «Akkauntni oʻchirish»ni tanlang. Profilingiz, rasmingiz, yozilishlaringiz, balans tarixi, Telegram va Apple bilan bogʻlanish oʻchiriladi, kelgusi yozilishlar bekor qilinadi. Gomi balansidagi pul kuyib ketadi. Apple bilan kirishni Appleʼning oʻzida bekor qilamiz — Gomi iPhone sozlamalaridagi «Apple bilan kirish» roʻyxatidan yoʻqoladi. Boshqa birovning klubida administrator boʻlsangiz, unga kirish akkaunt bilan birga yoʻqoladi.</p>
 <p>Kelmaslik uchun cheklovni chetlab oʻtib boʻlmasligi uchun akkaunt oʻchirilgach Telegram akkaunt raqamingiz yoki Apple ID identifikatoringiz va kelmay qolgan oʻyinlaringiz sanalarini yana 30 kungacha saqlaymiz. Oʻchirilgan akkauntdan boshqa hech narsa qolmaydi, 30 kundan keyin bu yozuv ham oʻchib ketadi.</p>
 <p>Xush kelibsiz bonusi har bir Telegram uchun bir marta beriladi, shuning uchun bonus olgan Telegram akkauntining raqamini akkaunt oʻchirilgandan keyin ham saqlaymiz — faqat raqamning oʻzini, ism, nik va boshqa maʼlumotlarsiz.</p>
-<p>Ilova qoʻlingizda boʻlmasa, <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> manziliga Telegram foydalanuvchi nomingizni yozing — akkauntni soʻrovingizga koʻra oʻchiramiz. Ochiq klubni boshqarsangiz, avval uni yoping: «Klubim → Klubni yopish».</p>
-<h2>Yosh</h2>
-<p>Gomi 18 yoshdan katta odamlar uchun moʻljallangan. 16 yoki 17 yoshda boʻlsangiz, ilovadan faqat ota-onangiz (yoki vasiylaringiz) roziligi bilan foydalanishingiz mumkin: qonunga koʻra voyaga yetmaganlar maʼlumotlarini qayta ishlashga rozilikni ular beradi. 16 yoshga toʻlmaganlar ilovadan foydalana olmaydi.</p>
-<h2>Oʻzgarishlar</h2>
-<p>Siyosat oʻzgarsa, yangi tahririni ilovada koʻrsatamiz. Maʼlumotlardan foydalanish maqsadlari oʻzgarsa, roziligingizni qaytadan soʻraymiz.</p>
-<h2>Biz bilan aloqa</h2>
+<p>Ilova qoʻlingizda boʻlmasa, <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> manziliga Telegram foydalanuvchi nomingizni yozing — akkauntni soʻrovingizga koʻra oʻchiramiz. Ochiq klubning egasi boʻlsangiz, avval uni yoping: «Klubim → Klubni yopish».</p>
+<h2 id="uz-14">14. Yosh</h2>
+<p>Gomi 18 yoshdan katta odamlar uchun moʻljallangan. 16 yoki 17 yoshda boʻlsangiz, ilovadan faqat ota-onangiz (yoki vasiylaringiz) roziligi bilan foydalanishingiz mumkin: qonunga koʻra voyaga yetmaganlar maʼlumotlarini qayta ishlashga rozilikni ular beradi. 16 yoshga toʻlmaganlar ilovadan foydalana olmaydi. Bizda 16 yoshga toʻlmagan bolaning maʼlumotlari borligini bilsangiz, xabar bering — ularni oʻchiramiz.</p>
+<h2 id="uz-15">15. Sayt</h2>
+<p>Saytimiz reklama va kuzatuv cookie fayllaridan foydalanmaydi va tashrif buyuruvchilar haqida maʼlumot yigʻmaydi.</p>
+<h2 id="uz-16">16. Oʻzgarishlar</h2>
+<p>Siyosat oʻzgarsa, yangi tahririni kuchga kirish sanasi bilan ilovada va saytda eʼlon qilamiz. Maʼlumotlardan foydalanish maqsadlari oʻzgarsa, roziligingizni qaytadan soʻraymiz.</p>
+<h2 id="uz-17">17. Biz bilan aloqa</h2>
 <p>Pochta: <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a></p>
 </section>
 
 <section id="ru" lang="ru">
 <h1>Политика конфиденциальности Gomi</h1>
-<p class="meta">Редакция от 24 ноября 2026</p>
-<h2>Кто мы</h2>
-<p>Gomi — приложение, которое помогает собраться на игру в игровом клубе. Эта политика объясняет, какие данные мы получаем, зачем, где и сколько храним и что вы можете с ними сделать. Она составлена по Закону Республики Узбекистан «О персональных данных».</p>
+<p class="meta">Редакция от 28 ноября 2026, действует с этой даты</p>
+<div class="summary"><strong>Коротко.</strong> Мы храним минимум: ник, уровень в играх, фото (если вы его добавили), данные входа через Telegram или Apple, ваши записи на игры и баланс Gomi. Мы не спрашиваем номер телефона игрока, не храним данные банковских карт и ваше местоположение, не показываем рекламу и не передаём данные рекламодателям. Аккаунт можно удалить в приложении в любой момент.</div>
+<div class="toc"><p><strong>Содержание</strong></p><ol>
+<li><a href="#ru-1">Кто мы</a></li>
+<li><a href="#ru-2">Какие данные мы храним, откуда они и зачем</a></li>
+<li><a href="#ru-3">Чего мы не собираем</a></li>
+<li><a href="#ru-4">Цели и правовые основания</a></li>
+<li><a href="#ru-5">Что видят другие</a></li>
+<li><a href="#ru-6">Клубы, владельцы и администраторы</a></li>
+<li><a href="#ru-7">Автоматические ограничения</a></li>
+<li><a href="#ru-8">Сообщения от Gomi</a></li>
+<li><a href="#ru-9">Какие сервисы получают данные</a></li>
+<li><a href="#ru-10">Где хранятся данные и как мы их защищаем</a></li>
+<li><a href="#ru-11">Сколько мы храним данные</a></li>
+<li><a href="#ru-12">Ваши права</a></li>
+<li><a href="#ru-13">Удаление аккаунта</a></li>
+<li><a href="#ru-14">Возраст</a></li>
+<li><a href="#ru-15">Сайт</a></li>
+<li><a href="#ru-16">Изменения</a></li>
+<li><a href="#ru-17">Как с нами связаться</a></li>
+</ol></div>
+<h2 id="ru-1">1. Кто мы</h2>
+<p>Gomi — приложение, которое помогает собраться на игру в игровом клубе. Эта политика объясняет, какие данные мы получаем, зачем, где и сколько храним и что вы можете с ними сделать. Она составлена по Закону Республики Узбекистан «О персональных данных» № ЗРУ-547 и одновременно уведомляет вас о целях обработки и ваших правах.</p>
 <p>Собственник и оператор данных — разработчик приложения Gomi (физическое лицо, Республика Узбекистан). Он же отвечает за обработку и защиту данных. Связаться: <a href="mailto:iskandarnishonov@yandex.com.">iskandarnishonov@yandex.com.</a> Имя и почтовый адрес сообщим по запросу.</p>
-<h2>Какие данные мы храним</h2>
+<h2 id="ru-2">2. Какие данные мы храним, откуда они и зачем</h2>
 <ul>
-<li>Ник и уровень в каждой игре, которые вы указали.</li>
-<li>Ваши ответы после игр («слишком сложно / в самый раз / слишком легко») и оценки уровня соперников. Чужие оценки о вас никто не видит: по ним Gomi только предлагает поменять уровень.</li>
-<li>Фото профиля, если вы его загрузили или оно пришло из Telegram.</li>
-<li>Номер вашего аккаунта Telegram, имя пользователя и имя — когда вы входите через Telegram.</li>
-<li>Идентификатор Apple ID — когда вы входите через Apple на iPhone. Имя и почту Apple мы не запрашиваем.</li>
-<li>Ваши записи на события, объявления «Нужен игрок» и отклики на них, отметки о приходе (в том числе по чьему QR-коду вы отметились) и неявки.</li>
-<li>Историю баланса Gomi: начисления, списания и возвраты.</li>
-<li>Выбранный язык приложения.</li>
-<li>Город, район, игры и клубы для срочных оповещений («Нужен игрок» и SOS) — если вы их включили.</li>
-<li>Если вы регистрируете клуб: его название, адрес, фото и телефон.</li>
+<li>Ник и уровень в каждой игре — указываете вы. Чтобы другие видели, кто придёт, и чтобы подбирать игроков одного уровня.</li>
+<li>Ответы после игр («слишком сложно / в самый раз / слишком легко») и оценки уровня соперников — указываете вы. Чужие оценки о вас никто не видит: по ним Gomi только предлагает поменять уровень.</li>
+<li>Фото профиля — загружаете вы или оно приходит из Telegram, по желанию. Перед загрузкой приложение убирает из фото служебные данные камеры, в том числе координаты съёмки. Приложение полностью работает и без фото.</li>
+<li>Номер аккаунта Telegram, имя пользователя и имя — от Telegram, когда вы входите через него. Для входа и сообщений бота.</li>
+<li>Идентификатор Apple ID — от Apple, когда вы входите через Apple на iPhone. Имя и почту Apple мы не запрашиваем.</li>
+<li>Записи на игры, отмены, объявления «Нужен игрок» и отклики на них, отметки о приходе (в том числе по чьему QR-коду) и неявки — появляются, когда вы пользуетесь Gomi. Чтобы проводить игры, считать явку и применять правила записи.</li>
+<li>История баланса Gomi: начисления, списания и возвраты — появляется при записи и отмене.</li>
+<li>Язык приложения — выбираете вы. Чтобы приложение и сообщения бота были на вашем языке.</li>
+<li>Город, район, игры и клубы для срочных оповещений — если вы их включили.</li>
+<li>Если вы регистрируете клуб или помогаете вести его: название, адрес, фото и телефон клуба, а также кто владелец и кто администраторы клуба.</li>
+<li>Технические журналы сервера: время запроса, IP-адрес и сведения о приложении — их ведёт наш сервер Supabase и хранит недолго. Чтобы находить сбои и защищать сервис от атак.</li>
 </ul>
-<h2>Чего мы не собираем</h2>
-<p>У игроков мы не запрашиваем номер телефона, паспортные, биометрические и другие специальные данные. Телефон нужен только при регистрации клуба — это телефон клуба. Данные банковских карт в приложении не хранятся.</p>
+<h2 id="ru-3">3. Чего мы не собираем</h2>
+<p>У игроков мы не запрашиваем номер телефона, почту, паспортные, биометрические и другие специальные данные, не читаем контакты телефона и не используем рекламные идентификаторы. Телефон нужен только при регистрации клуба — это телефон клуба. Данные банковских карт в приложении не хранятся. Рекламы в Gomi нет.</p>
 <p>Примерное местоположение используется, только если вы сами включили «Сначала ближайшие», — чтобы показать ближайшие клубы. Оно обрабатывается на вашем телефоне, на сервер не отправляется и не сохраняется.</p>
-<p>Точное местоположение запрашивается, только когда вы отмечаетесь в клубе по QR-коду другого игрока или даёте объявление «Нужен игрок»: координаты один раз отправляются на сервер, чтобы проверить, что вы рядом с клубом, и нигде не сохраняются. По коду администратора клуба местоположение не нужно.</p>
-<h2>Зачем нужны данные и на каком основании</h2>
-<p>Чтобы вы могли записываться на игры, а клубы и другие игроки видели, кто придёт; чтобы вести баланс и возвраты; чтобы ваш аккаунт не пропал при смене телефона; чтобы считать показатель явки и защищать сервис от злоупотреблений.</p>
-<p>Основание — ваше согласие, которое вы даёте на первом экране приложения, и выполнение договора с вами (запись на игру). Мы используем данные только для этих целей.</p>
-<h2>Что видят другие</h2>
-<p>Другие игроки и клубы видят ваш ник, фото, уровень, показатель явки и то, на какие события вы записаны. Баланс и данные Telegram видите только вы.</p>
-<p>Если вы даёте объявление «Нужен игрок», игроки видят ваш ник, клуб и игру; вы видите ники откликнувшихся и пришли ли они. Клуб видит, кто отметился по QR-коду другого игрока и по чьему.</p>
+<p>Точное местоположение запрашивается, только когда вы отмечаетесь в клубе по QR-коду другого игрока или даёте объявление «Нужен игрок» в режиме «Мы уже в клубе»: координаты один раз отправляются на сервер, чтобы проверить, что вы рядом с клубом, и нигде не сохраняются. По коду администратора клуба и для объявления «Собираем компанию» местоположение не нужно.</p>
+<h2 id="ru-4">4. Цели и правовые основания</h2>
+<p>Мы используем данные, чтобы вы могли записываться на игры, а клубы и другие игроки видели, кто придёт; чтобы проводить объявления «Нужен игрок» и сборы компаний; чтобы вести баланс и возвраты; чтобы ваш аккаунт не пропал при смене телефона; чтобы присылать сообщения о ваших играх; чтобы считать показатель явки и защищать сервис от злоупотреблений.</p>
+<p>Основания:<br>• выполнение договора с вами — запись на игру, объявления, баланс и сообщения о ваших играх;<br>• ваше согласие, которое вы даёте на первом экране приложения;<br>• обязанности, которые возлагает на нас закон;<br>• законный интерес — безопасность и работоспособность сервиса, если это не нарушает ваши права.</p>
+<p>Мы используем данные только для этих целей. Если появится новая цель, попросим согласие заново.</p>
+<h2 id="ru-5">5. Что видят другие</h2>
+<p>Другие игроки и клубы видят ваш ник, фото, уровень, показатель явки и то, на какие игры вы записаны. Баланс и данные Telegram видите только вы.</p>
+<p>Если вы даёте объявление «Нужен игрок», игроки видят ваш ник, клуб, игру, а для «Собираем компанию» — и время встречи; вы видите ники откликнувшихся и пришли ли они. Когда компания собралась, клуб получает сообщение с вашим ником и временем встречи, чтобы подготовить компьютеры. Клуб видит, кто отметился по QR-коду другого игрока и по чьему.</p>
 <p>Название, адрес, фото и телефон одобренного клуба видят все игроки — чтобы найти клуб и позвонить.</p>
-<h2>Заявки на клуб</h2>
-<p>Когда вы подаёте заявку на клуб, администрация Gomi видит её данные, а также ваш ник, имя пользователя Telegram и дату регистрации в Gomi — чтобы проверить клуб и связаться с вами.</p>
-<p>Если заявку отклонили, мы храним её вместе с телефоном клуба и номером вашего аккаунта Telegram один год, чтобы ту же заявку нельзя было подать снова с другого аккаунта. Эти данные видит только администрация Gomi. Через год заявка удаляется сама.</p>
-<p>Клуб можно закрыть в «Мой клуб → Закрыть клуб»: игроки перестанут его видеть, будущие события отменятся с возвратом денег, а история прошлых игр сохранится.</p>
-<h2>Автоматические ограничения</h2>
-<p>Если за 30 дней вы несколько раз записались и не пришли, приложение само на время закрывает запись на события: после 3 неявок — на 3 дня, после 4 и больше — на 7 дней. Неявка засчитывается, если вы не отметились в клубе, а по объявлению «Нужен игрок» — если не подтвердили приход вовремя. После каждой неявки приложение предупреждает, сколько их осталось до ограничения. Если вы не согласны с неявкой или ограничением, напишите нам: мы проверим и ответим в течение 10 дней.</p>
-<h2>Какие сервисы получают данные</h2>
-<p>Мы не продаём данные и не передаём их для рекламы. Для работы приложения мы пользуемся такими сервисами:<br>• Supabase хранит данные приложения на серверах в Японии.<br>• Telegram нужен для входа в аккаунт и для сообщений бота Gomi: напоминания и уведомления о ваших играх, а также срочные оповещения, если вы их включили.<br>• Apple — для входа через Apple на iPhone, если вы его выбрали.<br>• Яндекс Карты показывают карту клубов. При показе карты Яндекс может получать технические данные вашего устройства, например IP-адрес и идентификатор устройства, как написано в условиях Яндекса.</p>
-<h2>Где хранятся данные</h2>
+<h2 id="ru-6">6. Клубы, владельцы и администраторы</h2>
+<p>Когда вы подаёте заявку на клуб, администрация Gomi видит её данные, а также ваш ник, имя пользователя Telegram и дату регистрации в Gomi — чтобы проверить клуб и связаться с вами. Кто зарегистрировал клуб, тот его владелец.</p>
+<p>Администратор смены может попросить доступ к клубу кнопкой «Я администратор этого клуба». Владелец видит его ник, имя пользователя Telegram и дату просьбы, одобряет или отклоняет её и может в любой момент убрать администратора. Администраторы видят игры клуба, записи и отметки, но не статистику, подписку и настройки клуба.</p>
+<p>Если заявку на клуб отклонили, мы храним её вместе с телефоном клуба и номером вашего аккаунта Telegram один год, чтобы ту же заявку нельзя было подать снова с другого аккаунта. Эти данные видит только администрация Gomi. Через год заявка удаляется сама.</p>
+<p>Клуб можно закрыть в «Мой клуб → Закрыть клуб»: игроки перестанут его видеть, будущие игры отменятся с возвратом денег, а история прошлых игр сохранится.</p>
+<h2 id="ru-7">7. Автоматические ограничения</h2>
+<p>Если за 30 дней вы несколько раз записались и не пришли, приложение само на время закрывает запись на игры: после 3 неявок — на 3 дня, после 4 и больше — на 7 дней. Неявка засчитывается, если вы не отметились в клубе, а по объявлению «Нужен игрок» — если не подтвердили приход вовремя. После каждой неявки приложение предупреждает, сколько их осталось до ограничения.</p>
+<p>Бесплатно отменить запись можно до 3 раз за 7 дней; отмена в первые 5 минут после записи в лимит не входит. Нельзя записаться на две игры в одно время.</p>
+<p>Если вы не согласны с неявкой или ограничением, напишите нам: мы проверим и ответим в течение 10 дней.</p>
+<h2 id="ru-8">8. Сообщения от Gomi</h2>
+<p>Бот Gomi в Telegram и раздел «Оповещения» в приложении присылают только сообщения о ваших играх и аккаунте: запись и отмена, «Игра состоится», напоминания, освободилось место, клуб отменил игру и вернул деньги, неявка, «Компания собралась», а клубам — о записях и заявках. Срочные оповещения «Нужен игрок» и SOS приходят, только если вы их включили. Сообщения приходят на двух языках. Рекламных рассылок нет.</p>
+<p>Срочные оповещения выключаются в «Профиле». Чтобы совсем не получать сообщения в Telegram, остановите бота Gomi в Telegram — приложение продолжит работать.</p>
+<h2 id="ru-9">9. Какие сервисы получают данные</h2>
+<p>Мы не продаём данные и не передаём их для рекламы. Для работы приложения мы пользуемся такими сервисами:<br>• Supabase хранит данные приложения и технические журналы на серверах в Японии.<br>• Telegram нужен для входа в аккаунт и для сообщений бота Gomi.<br>• Apple — для входа через Apple на iPhone, если вы его выбрали.<br>• Яндекс Карты показывают карту клубов. При показе карты Яндекс может получать технические данные вашего устройства, например IP-адрес и идентификатор устройства, как написано в условиях Яндекса.</p>
+<p>Внутри Gomi доступ к данным есть только у администрации сервиса и только в объёме, нужном для поддержки и работы приложения. Государственным органам данные передаются только по законному требованию в случаях, предусмотренных законодательством Республики Узбекистан.</p>
+<h2 id="ru-10">10. Где хранятся данные и как мы их защищаем</h2>
 <p>Данные хранятся за пределами Узбекистана — на защищённых серверах в Японии. Япония входит в перечень иностранных государств, обеспечивающих адекватную защиту персональных данных (постановление Кабинета Министров Республики Узбекистан № 415 от 29 июля 2026 года). Соглашаясь с этой политикой, вы соглашаетесь и на такое хранение.</p>
-<p>Мы защищаем данные: по сети они передаются только по шифрованному соединению, каждый видит только то, что ему разрешено, а администраторы — только то, что нужно для работы.</p>
-<h2>Сколько мы храним данные</h2>
+<p>Как мы защищаем данные:<br>• по сети данные передаются только по шифрованному соединению (HTTPS);<br>• вход — по подписанным ключам доступа, без паролей;<br>• правила доступа в самой базе: каждый видит только то, что ему разрешено, а администрация — только то, что нужно для работы;<br>• из фото профиля убираются служебные данные камеры;<br>• данные банковских карт к нам не попадают.</p>
+<p>Ни один способ хранения не даёт абсолютной защиты, но мы держим её на уровне, который соответствует характеру данных и требованиям закона.</p>
+<h2 id="ru-11">11. Сколько мы храним данные</h2>
 <ul>
 <li>Профиль, записи, отметки и баланс — пока у вас есть аккаунт.</li>
+<li>Фото профиля — пока оно загружено; при замене или удалении прежний файл удаляется.</li>
+<li>Технические журналы сервера — несколько дней.</li>
 <li>После удаления аккаунта — только номер аккаунта Telegram или идентификатор Apple ID и даты неявок, до 30 дней.</li>
 <li>Номер аккаунта Telegram, получившего бонус, — бессрочно (только сам номер).</li>
 <li>Отклонённые заявки на клуб — один год.</li>
 <li>Прошлые игры закрытого клуба — пока существуют аккаунты их участников.</li>
 </ul>
-<h2>Ваши права</h2>
-<p>Вы можете:<br>• узнать, какие ваши данные у нас есть, и получить информацию об их обработке;<br>• изменить ник, уровень и фото в профиле или попросить исправить другие данные — исправим не позднее трёх дней;<br>• попросить временно остановить обработку неточных или ненужных данных;<br>• отозвать согласие и удалить аккаунт;<br>• пожаловаться в уполномоченный государственный орган по персональным данным или в суд.</p>
-<p>Запросы присылайте на <a href="mailto:iskandarnishonov@yandex.com.">iskandarnishonov@yandex.com.</a> Ответим в течение 10 дней. После удаления аккаунта записи и баланс не восстанавливаются.</p>
-<h2>Удаление аккаунта</h2>
-<p>Вы можете удалить аккаунт сами: в приложении откройте «Профиль», нажмите на своё фото и ник вверху, затем «Удалить аккаунт». Мы удалим ваш профиль, записи, историю баланса и привязку Telegram и Apple, а будущие записи отменим. Баланс Gomi при этом сгорает. Вход через Apple мы отзываем в самой Apple, и Gomi пропадает из списка «Вход с Apple» в настройках iPhone.</p>
+<p>По истечении сроков данные удаляются или обезличиваются.</p>
+<h2 id="ru-12">12. Ваши права</h2>
+<p>По статье 30 Закона «О персональных данных» вы можете:<br>• узнать, какие ваши данные у нас есть, и получить информацию об их обработке;<br>• изменить ник, уровень и фото в профиле или попросить исправить другие данные — исправим не позднее трёх дней;<br>• попросить временно остановить обработку неполных, устаревших или неточных данных;<br>• потребовать удалить данные, которые обрабатываются с нарушением закона;<br>• отозвать согласие и удалить аккаунт;<br>• пожаловаться в уполномоченный государственный орган по персональным данным — Государственный центр персонализации при Кабинете Министров Республики Узбекистан — или в суд.</p>
+<p>Запросы присылайте на <a href="mailto:iskandarnishonov@yandex.com.">iskandarnishonov@yandex.com.</a> Ответим в течение 10 дней. Чтобы защитить ваши данные, мы можем попросить подтвердить, что вы владелец аккаунта, например написать с того же Telegram. После удаления аккаунта записи и баланс не восстанавливаются.</p>
+<h2 id="ru-13">13. Удаление аккаунта</h2>
+<p>Вы можете удалить аккаунт сами: в приложении откройте «Профиль», нажмите на своё фото и ник вверху, затем «Удалить аккаунт». Мы удалим ваш профиль, фото, записи, историю баланса и привязку Telegram и Apple, а будущие записи отменим. Баланс Gomi при этом сгорает. Вход через Apple мы отзываем в самой Apple, и Gomi пропадает из списка «Вход с Apple» в настройках iPhone. Если вы администратор чужого клуба, доступ к нему пропадёт вместе с аккаунтом.</p>
 <p>Чтобы нельзя было обойти ограничение за неявки, после удаления аккаунта мы ещё до 30 дней храним номер вашего аккаунта Telegram или идентификатор Apple ID и даты пропущенных игр. Больше ничего из удалённого аккаунта не остаётся, а через 30 дней эта запись стирается сама.</p>
 <p>Приветственный бонус выдаётся один раз на каждый Telegram, поэтому номер аккаунта Telegram, который уже получил бонус, мы храним и после удаления аккаунта — только сам номер, без имени, ника и любых других данных.</p>
-<p>Если приложения под рукой нет, напишите нам на почту <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> и укажите имя пользователя Telegram — мы удалим аккаунт по вашей просьбе. Если вы управляете открытым клубом, сначала закройте его: «Мой клуб → Закрыть клуб».</p>
-<h2>Возраст</h2>
-<p>Gomi предназначен для людей от 18 лет. Если вам 16 или 17 лет, пользоваться приложением можно только с согласия родителей (или опекунов): по закону согласие на обработку данных несовершеннолетнего дают они. Младше 16 лет приложением пользоваться нельзя.</p>
-<h2>Изменения</h2>
-<p>Если политика изменится, мы покажем новую редакцию в приложении. Если изменятся цели обработки данных, мы попросим ваше согласие заново.</p>
-<h2>Как с нами связаться</h2>
+<p>Если приложения под рукой нет, напишите нам на почту <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> и укажите имя пользователя Telegram — мы удалим аккаунт по вашей просьбе. Если вы владелец открытого клуба, сначала закройте его: «Мой клуб → Закрыть клуб».</p>
+<h2 id="ru-14">14. Возраст</h2>
+<p>Gomi предназначен для людей от 18 лет. Если вам 16 или 17 лет, пользоваться приложением можно только с согласия родителей (или опекунов): по закону согласие на обработку данных несовершеннолетнего дают они. Младше 16 лет приложением пользоваться нельзя. Если вы узнали, что у нас есть данные ребёнка младше 16 лет, сообщите нам — мы их удалим.</p>
+<h2 id="ru-15">15. Сайт</h2>
+<p>Наш сайт не использует рекламные и отслеживающие cookies и не собирает данные посетителей.</p>
+<h2 id="ru-16">16. Изменения</h2>
+<p>Если политика изменится, мы опубликуем новую редакцию в приложении и на сайте с датой вступления в силу. Если изменятся цели обработки данных, мы попросим ваше согласие заново.</p>
+<h2 id="ru-17">17. Как с нами связаться</h2>
 <p>Почта: <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a></p>
 </section>
 
