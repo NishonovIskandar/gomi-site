@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gomi — Пользовательское соглашение / Foydalanish shartlari</title>
+<meta name="description" content="Пользовательское соглашение приложения Gomi. Gomi ilovasidan foydalanish shartlari.">
+<style>
+  :root { --bg:#fff; --fg:#1c1b22; --muted:#5b5a66; --accent:#6a5bd6; --line:#e4e2ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121116; --fg:#ececf2; --muted:#a3a2b0; --accent:#9c90f0; --line:#2b2a35; }
+  }
+  html { background: var(--bg); }
+  body { margin:0 auto; max-width:720px; padding:24px 16px 64px; color:var(--fg);
+         font:16px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  a { color: var(--accent); }
+  nav { display:flex; gap:8px; margin-bottom:16px; padding:8px 0; position:sticky; top:0; background:var(--bg); z-index:1; }
+  nav a.other { margin-left:auto; }
+  nav a { padding:6px 14px; border:1px solid var(--line); border-radius:999px; text-decoration:none; color:var(--fg); }
+  h1 { font-size:26px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:28px 0 6px; }
+  p, li { color: var(--muted); }
+  .meta { font-size:14px; }
+  .summary { margin:16px 0; padding:14px 16px; border:1px solid var(--line); border-radius:14px; color:var(--fg); }
+  .toc ol { padding-left:22px; margin:6px 0 0; }
+  .toc li { margin:3px 0; }
+  .toc a { text-decoration:none; }
+  ul { padding-left:20px; }
+  /* Без скриптов: по умолчанию виден русский, ссылка #uz показывает узбекский.
+     Разделы в разметке идут перед nav, поэтому переключатель стоит сверху
+     через order. */
+  body { display:flex; flex-direction:column; }
+  nav { order:-1; }
+  section { scroll-margin-top:64px; }
+  #uz { display:none; }
+  #uz:target { display:block; }
+  #uz:target ~ #ru { display:none; }
+  nav a[href="#ru"], #uz:target ~ nav a[href="#uz"] { border-color:var(--accent); }
+  #uz:target ~ nav a[href="#ru"] { border-color:var(--line); }
+  /* Ссылки оглавления узбекской версии ведут на её разделы — она остаётся открытой. */
+  #uz:has(:target) { display:block; }
+  #uz:has(:target) ~ #ru { display:none; }
+  #uz:has(:target) ~ nav a[href="#uz"] { border-color:var(--accent); }
+  #uz:has(:target) ~ nav a[href="#ru"] { border-color:var(--line); }
+</style>
+</head>
+<body>
+<section id="uz" lang="uz">
+<h1>Gomidan foydalanish shartlari</h1>
+<p class="meta">2026-yil 29-noyabr tahriri, shu kundan kuchga kiradi</p>
+<div class="summary"><strong>Qisqacha.</strong> Gomi klubda oʻyin topish va kompaniya yigʻishga yordam beradi. Klub — alohida tashkilot: klubdagi vaqt uchun unga joyida, uning narxida toʻlaysiz, Gomi esa joy uchun kichik xizmat haqi oladi. Yozildingizmi — keling yoki oldindan bekor qiling. Boshqa oʻyinchilarni hurmat qiling: haqorat, aldov va soxta belgilanish uchun yozilishni yopamiz yoki akkauntni oʻchiramiz.</div>
+<div class="toc"><p><strong>Mundarija</strong></p><ol>
+<li><a href="#uz-1">Gomi nima va bu shartlar</a></li>
+<li><a href="#uz-2">Akkaunt</a></li>
+<li><a href="#uz-3">Hamma uchun qoidalar</a></li>
+<li><a href="#uz-4">Yozilish, xizmat haqi va Gomi balansi</a></li>
+<li><a href="#uz-5">Bekor qilish va pulni qaytarish</a></li>
+<li><a href="#uz-6">Kelmaslik</a></li>
+<li><a href="#uz-7">«Oʻyinchi kerak» va SOS</a></li>
+<li><a href="#uz-8">Klublar uchun</a></li>
+<li><a href="#uz-9">Shikoyatlar va choralar</a></li>
+<li><a href="#uz-10">Javobgarlik</a></li>
+<li><a href="#uz-11">Akkauntni oʻchirish</a></li>
+<li><a href="#uz-12">Shartlarning oʻzgarishi</a></li>
+<li><a href="#uz-13">Nizolar va aloqa</a></li>
+</ol></div>
+<h2 id="uz-1">1. Gomi nima va bu shartlar</h2>
+<p>Gomi — ilova: unda klublar oʻyinlarni eʼlon qiladi, oʻyinchilar esa ularga yoziladi, yetishmayotgan oʻyinchilarni («Oʻyinchi kerak») va boshlangan oʻyinga oʻrinbosar (SOS) qidiradi.</p>
+<p>Gomi klub emas va klub xizmatlarini koʻrsatmaydi: xona, kompyuter va pristavkalar, zaldagi tartib va vaqt narxlari — klubning ishi.</p>
+<p>Bu shartlar — siz bilan ilova ishlab chiquvchisi (jismoniy shaxs, Oʻzbekiston Respublikasi; bundan keyin — «biz») oʻrtasidagi Gomidan foydalanish qoidalari. Kirishda rozilikni belgilab yoki ilovadan foydalanib, siz shartlarni qabul qilasiz. Maʼlumotlaringiz bilan qanday ishlashimiz alohida — Maxfiylik siyosatida yozilgan.</p>
+<h2 id="uz-2">2. Akkaunt</h2>
+<ul>
+<li>Gomidan 18 yoshdan yoki ota-ona roziligi bilan foydalanish mumkin.</li>
+<li>Kirish — Telegram yoki Apple orqali. Bir kishi — bitta akkaunt: bonus uchun yoki cheklovlarni aylanib oʻtish uchun ikkinchi akkaunt ochish taqiqlanadi.</li>
+<li>Akkauntingizda boʻlayotgan hamma narsaga siz javob berasiz. Uni boshqalarga bermang.</li>
+<li>Nik va rasmni boshqa oʻyinchilar va klublar koʻradi — ular haqoratli, odobsiz boʻlmasligi va sizni boshqa odam yoki klub qilib koʻrsatmasligi kerak.</li>
+</ul>
+<h2 id="uz-3">3. Hamma uchun qoidalar</h2>
+<p>Taqiqlanadi:</p>
+<ul>
+<li>boshqa oʻyinchilar yoki klub xodimlarini haqorat qilish, qoʻrqitish, ularga tazyiq oʻtkazish — ilovada ham, klubda ham;</li>
+<li>boshqa odam oʻrniga belgilanish, QR-kodlarni klubda yoʻqlarga yuborish, joylashuvni soxtalashtirish;</li>
+<li>joylarni qayta sotish, Gomini chetlab joy uchun pul olish, boshqa oʻyinchilarni aldash;</li>
+<li>bonusni qayta olish yoki yopilgan yozilishni aylanib oʻtish uchun bir nechta akkaunt ochish;</li>
+<li>haqiqiy oʻyinsiz «Oʻyinchi kerak» eʼlonlarini tarqatish, klublar va oʻyinchilarga xalaqit berish;</li>
+<li>ilova yoki serverni buzishga, boshqalarning maʼlumotlarini olishga urinish.</li>
+</ul>
+<p>Klubda uning qoidalari amal qiladi — ularga rioya qiling.</p>
+<h2 id="uz-4">4. Yozilish, xizmat haqi va Gomi balansi</h2>
+<ul>
+<li>Har bir joy uchun Gomi xizmat haqi oladi. Uning summasi toʻlovdan oldin yozilish tugmasida koʻrinadi.</li>
+<li>Klubdagi vaqt uchun klubga joyida, uning narxida toʻlaysiz — Gomi xizmat haqidan alohida.</li>
+<li>Xizmat haqi Gomi balansidan yechiladi. Balansga bonuslar (masalan, Telegramni birinchi marta ulaganda — har bir Telegram uchun bir marta) va qaytarilgan pullar tushadi.</li>
+<li>Balansdagi pulni faqat Gomidagi yozilishlarga sarflash mumkin. Uni kartaga yechib yoki boshqa oʻyinchiga oʻtkazib boʻlmaydi.</li>
+<li>Doʻstlaringizni yozsangiz, ularning joyi uchun siz toʻlaysiz va ular kelishiga javob berasiz.</li>
+<li>Bir vaqtda ikkita oʻyinga yozilib boʻlmaydi. Turli klublardagi oʻyinlar orasida yoʻl uchun kamida 45 daqiqa boʻlishi kerak; 5 ga 5 oʻyin kamida 3 soat hisoblanadi.</li>
+<li>Karta orqali toʻlov hali ulanmagan. U paydo boʻlganda shartlarini shu yerga qoʻshamiz.</li>
+</ul>
+<h2 id="uz-5">5. Bekor qilish va pulni qaytarish</h2>
+<ul>
+<li>Boshlanishidan kamida 2 soat oldin bekor qilsangiz, xizmat haqi balansga qaytadi. Shunday qilib 7 kunda 3 tagacha yozilishni bekor qilish mumkin; keyin bekor qilganda xizmat haqi qaytmaydi.</li>
+<li>Yozilgandan keyingi dastlabki 5 daqiqada bekor qilish har doim bepul va hisobga kirmaydi.</li>
+<li>Boshlanishiga 2 soatdan kam qolganda bekor qilsangiz, xizmat haqi qaytmaydi, lekin bu kelmaslik hisoblanmaydi.</li>
+<li>Klub oʻyinni bekor qilsa, xizmat haqi hammaga avtomatik qaytadi.</li>
+<li>«Kim birinchi yigʻiladi» yigʻinida kompyuterlar hammani birinchi yigʻgan oʻyinga beriladi; boshqa oʻyinlarga yozilganlarga xizmat haqi qaytadi.</li>
+</ul>
+<h2 id="uz-6">6. Kelmaslik</h2>
+<ul>
+<li>Klubga kelganingizda QR-kod orqali belgilaning: boshlanishidan 30 daqiqa oldindan 30 daqiqa keyingacha.</li>
+<li>Belgilanmasangiz — bu kelmaslik. U davomat koʻrsatkichingizni tushiradi, uni boshqa oʻyinchilar koʻradi.</li>
+<li>30 kunda 3 marta kelmaslik — yozilish 3 kunga, 4 va undan koʻp — 7 kunga yopiladi. Yozilish yopiq paytda «Oʻyinchi kerak» eʼlonini ham berib boʻlmaydi.</li>
+<li>Kelib, belgilana olmagan boʻlsangiz, klub administratoridan sizni belgilashini soʻrang.</li>
+</ul>
+<h2 id="uz-7">7. «Oʻyinchi kerak» va SOS</h2>
+<ul>
+<li>Eʼlon muallifi har bir kerakli oʻyinchi uchun toʻlaydi; topilmaganlar uchun pul qaytadi. Javob bergan oʻyinchi oddiy xizmat haqini toʻlaydi va dastlabki 5 daqiqada javobini bepul bekor qilishi mumkin.</li>
+<li>«Klubdamiz»: eʼlonni faqat klubda turib berish mumkin. Javob bergan oʻyinchi 40 daqiqa ichida kelib, muallifning QR-kodi orqali kelganini tasdiqlashi kerak.</li>
+<li>«Kompaniya yigʻamiz»: uchrashuv bugun, kelish muallifning QR-kodi orqali uchrashuvdan 30 daqiqa oldindan 15 daqiqa keyingacha tasdiqlanadi. Muallif ham klubda belgilanadi. Muallif belgilanmasa va hech kim kelmasa, javob berganlarga xizmat haqi kelmaslik yozilmasdan qaytadi, muallifga esa topilgan oʻyinchilar uchun toʻlov qaytmaydi.</li>
+<li>SOS: oʻyin boshlanganidan 15 daqiqa oʻtgach, belgilangan oʻyinchi oʻrinbosar chaqirishi mumkin. Kelmaganlarning joylari boʻshatiladi, ularga kelmaslik yoziladi. Oʻrinbosar uchun joyni toʻlagan oʻyinchi, oʻrinbosar kelmasa, uning garovini oladi.</li>
+<li>Kelganini oʻz vaqtida tasdiqlamagan oʻyinchining joyi boʻshatiladi, xizmat haqi qaytmaydi, kelmaslik yoziladi.</li>
+</ul>
+<h2 id="uz-8">8. Klublar uchun</h2>
+<ul>
+<li>Klubni faqat uning egasi yoki egasi vakolat bergan odam ulay oladi. Klub maʼlumotlari (nomi, manzili, xaritadagi joyi, telefoni, rasmlari) haqiqiy boʻlishi kerak.</li>
+<li>Gomida kimni klub administratori qilishni egasi oʻzi hal qiladi va ularning harakatlari uchun javob beradi.</li>
+<li>Klub oʻz oʻyinlari uchun javob beradi: ular koʻrsatilgan vaqtda, koʻrsatilgan narxda va kerakli joylar soni bilan oʻtishi kerak. Oʻyinni oʻtkaza olmasangiz, uni ilovada bekor qiling: oʻyinchilarga xizmat haqi qaytadi.</li>
+<li>Ulangandan keyingi dastlabki 6 oy bepul, keyin — «Klubim → Obuna»dagi narxlarda obuna. Obunasiz yangi oʻyin yaratib boʻlmaydi.</li>
+<li>Maʼlumotlar yolgʻon boʻlsa, oʻyinlar oʻtkazilmasa yoki klub ustidan asosli shikoyatlar koʻp boʻlsa, ulashni rad etishimiz yoki klubni yopishimiz mumkin.</li>
+</ul>
+<h2 id="uz-9">9. Shikoyatlar va choralar</h2>
+<ul>
+<li>Oʻyinchi ustidan uning menyusida («Shikoyat qilish») shikoyat qilish mumkin; oʻsha yerda uni yashirsa ham boʻladi. Shikoyatni faqat Gomi maʼmuriyati koʻradi, oʻyinchi kim shikoyat qilganini bilmaydi.</li>
+<li>Shikoyatlarni bir kun ichida koʻrib chiqamiz.</li>
+<li>Qoidabuzarlik uchun choralar: nikni almashtirish, rasmni olib tashlash, yozilishni 30 kunga yopish, ogʻir yoki takroriy qoidabuzarlik uchun — akkauntni oʻchirish. Qoidabuzarlik uchun oʻchirilgan akkaunt balansidagi pul qaytarilmaydi.</li>
+<li>Qarorga rozi boʻlmasangiz, <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> manziliga yozing — qayta koʻrib chiqamiz.</li>
+</ul>
+<h2 id="uz-10">10. Javobgarlik</h2>
+<ul>
+<li>Gomi oʻyin haqida kelishishga yordam beradi, lekin klubda boʻlayotgan narsalar uchun javob bermaydi: xona, texnika, narxlar va klub harakatlari, shuningdek boshqa oʻyinchilarning xulqi uchun. Klub xizmatlariga daʼvolar — klubga.</li>
+<li>Ilova uzilishlarsiz ishlashiga harakat qilamiz, lekin buni kafolatlay olmaymiz. Gomi xatosi tufayli belgilana yoki yozila olmagan boʻlsangiz, bizga yozing: xizmat haqini qaytaramiz va kelmaslikni olib tashlaymiz.</li>
+<li>Qonunda boshqacha talab qilinmagan boʻlsa, sizning oldingizdagi javobgarligimiz oxirgi 3 oyda Gomiga toʻlagan xizmat haqlaringiz summasi bilan cheklanadi.</li>
+</ul>
+<h2 id="uz-11">11. Akkauntni oʻchirish</h2>
+<p>Akkauntni istalgan vaqtda oʻchirish mumkin: «Profil» → «Shaxsiy maʼlumotlar» → «Akkauntni oʻchirish». Kelgusi yozilishlar bekor qilinadi, balansdagi pul yoʻqoladi va qaytarilmaydi. Oʻchirilgandan keyin nimani saqlashimiz Maxfiylik siyosatida yozilgan.</p>
+<h2 id="uz-12">12. Shartlarning oʻzgarishi</h2>
+<p>Shartlarni oʻzgartirishimiz mumkin — masalan, yangi imkoniyatlar yoki karta orqali toʻlov paydo boʻlganda. Muhim oʻzgarishlar haqida ilovada xabar beramiz. Yangi tahrir unda koʻrsatilgan sanadan kuchga kiradi; Gomidan foydalanishda davom etib, uni qabul qilasiz. Rozi boʻlmasangiz, akkauntni oʻchirishingiz mumkin.</p>
+<h2 id="uz-13">13. Nizolar va aloqa</h2>
+<p>Shartlar Oʻzbekiston Respublikasi qonunchiligi bilan tartibga solinadi. Savol va daʼvolarni <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> manziliga yoki «Profil» → «Qoʻllab-quvvatlashga yozish» orqali yuboring — 7 kun ichida javob beramiz. Kelisha olmasak, nizoni Oʻzbekiston Respublikasi qonunchiligiga koʻra sud hal qiladi.</p>
+</section>
+
+<section id="ru" lang="ru">
+<h1>Пользовательское соглашение Gomi</h1>
+<p class="meta">Редакция от 29 ноября 2026, действует с этой даты</p>
+<div class="summary"><strong>Коротко.</strong> Gomi помогает найти игру в клубе и собрать компанию. Клуб — отдельная организация: время в клубе вы оплачиваете ему на месте по его цене, Gomi берёт только небольшой сбор за место. Записались — приходите или отмените заранее. Уважайте других игроков: за оскорбления, обман и подставные отметки мы закрываем запись или удаляем аккаунт.</div>
+<div class="toc"><p><strong>Содержание</strong></p><ol>
+<li><a href="#ru-1">Что такое Gomi и это соглашение</a></li>
+<li><a href="#ru-2">Аккаунт</a></li>
+<li><a href="#ru-3">Правила для всех</a></li>
+<li><a href="#ru-4">Запись, сбор и баланс Gomi</a></li>
+<li><a href="#ru-5">Отмена и возврат</a></li>
+<li><a href="#ru-6">Неявки</a></li>
+<li><a href="#ru-7">«Нужен игрок» и SOS</a></li>
+<li><a href="#ru-8">Для клубов</a></li>
+<li><a href="#ru-9">Жалобы и меры</a></li>
+<li><a href="#ru-10">Ответственность</a></li>
+<li><a href="#ru-11">Удаление аккаунта</a></li>
+<li><a href="#ru-12">Изменения соглашения</a></li>
+<li><a href="#ru-13">Споры и связь</a></li>
+</ol></div>
+<h2 id="ru-1">1. Что такое Gomi и это соглашение</h2>
+<p>Gomi — приложение, через которое клубы публикуют игры, а игроки записываются на них, ищут недостающих игроков («Нужен игрок») и замену в уже идущей игре (SOS).</p>
+<p>Gomi не является клубом и не оказывает услуги клуба: помещение, компьютеры и приставки, порядок в зале и цены на время — забота клуба.</p>
+<p>Это соглашение — правила пользования Gomi между вами и разработчиком приложения (физическое лицо, Республика Узбекистан; далее — «мы»). Отмечая согласие при входе или пользуясь приложением, вы принимаете соглашение. Как мы обращаемся с вашими данными, описано отдельно — в Политике конфиденциальности.</p>
+<h2 id="ru-2">2. Аккаунт</h2>
+<ul>
+<li>Пользоваться Gomi можно с 18 лет или с согласия родителей.</li>
+<li>Вход — через Telegram или Apple. Один человек — один аккаунт: второй аккаунт ради бонуса или чтобы обойти ограничения запрещён.</li>
+<li>Вы отвечаете за всё, что происходит в вашем аккаунте. Не передавайте его другим людям.</li>
+<li>Ник и фото видят другие игроки и клубы — они не должны быть оскорбительными, непристойными или выдавать вас за другого человека или клуб.</li>
+</ul>
+<h2 id="ru-3">3. Правила для всех</h2>
+<p>Запрещено:</p>
+<ul>
+<li>оскорблять, угрожать, травить других игроков или сотрудников клуба — в приложении и в клубе;</li>
+<li>отмечаться за другого человека, пересылать QR-коды тем, кого нет в клубе, подделывать местоположение;</li>
+<li>перепродавать места, брать деньги за место в обход Gomi, обманывать других игроков;</li>
+<li>заводить несколько аккаунтов, чтобы получить бонус ещё раз или обойти закрытую запись;</li>
+<li>рассылать объявления «Нужен игрок» без настоящей игры, мешать клубам и игрокам;</li>
+<li>пытаться взломать приложение или сервер, получать чужие данные.</li>
+</ul>
+<p>В клубе действуют его правила — соблюдайте их.</p>
+<h2 id="ru-4">4. Запись, сбор и баланс Gomi</h2>
+<ul>
+<li>За каждое место Gomi берёт сервисный сбор. Его сумма видна на кнопке записи до оплаты.</li>
+<li>Время в клубе вы оплачиваете клубу на месте по его цене — отдельно от сбора Gomi.</li>
+<li>Сбор списывается с баланса Gomi. На баланс приходят бонусы (например, за первое подключение Telegram — один раз на каждый Telegram) и возвраты.</li>
+<li>Деньги с баланса можно тратить только на записи в Gomi. Вывести их на карту или передать другому игроку нельзя.</li>
+<li>Записывая друзей, вы платите за их места и отвечаете за то, что они придут.</li>
+<li>Нельзя быть записанным на две игры в одно время. Между играми в разных клубах нужно не меньше 45 минут на дорогу; игра 5 на 5 считается длиной не меньше 3 часов.</li>
+<li>Оплата картой пока не подключена. Когда она появится, мы добавим её условия в это соглашение.</li>
+</ul>
+<h2 id="ru-5">5. Отмена и возврат</h2>
+<ul>
+<li>Отмена не позже чем за 2 часа до начала — сбор возвращается на баланс. Так можно отменить до 3 записей за 7 дней; дальше сбор при отмене не возвращается.</li>
+<li>В первые 5 минут после записи отмена всегда бесплатная и в лимит не входит.</li>
+<li>Отмена позже чем за 2 часа до начала — сбор не возвращается, но неявкой это не считается.</li>
+<li>Если клуб отменил игру, сбор возвращается всем автоматически.</li>
+<li>В сборе «Кто первым соберётся» компьютеры достаются игре, которая первой наберёт всех; записавшимся на остальные игры сбор возвращается.</li>
+</ul>
+<h2 id="ru-6">6. Неявки</h2>
+<ul>
+<li>Придя в клуб, отметьтесь по QR-коду: от 30 минут до начала и до 30 минут после.</li>
+<li>Не отметились — это неявка. Она снижает показатель явки, который видят другие игроки.</li>
+<li>3 неявки за 30 дней — запись закрывается на 3 дня, 4 и больше — на 7 дней. Пока запись закрыта, нельзя и давать объявления «Нужен игрок».</li>
+<li>Если вы пришли, но отметиться не получилось, попросите администратора клуба отметить вас.</li>
+</ul>
+<h2 id="ru-7">7. «Нужен игрок» и SOS</h2>
+<ul>
+<li>Автор объявления платит за каждого нужного игрока; за тех, кого не нашли, деньги возвращаются. Откликнувшийся платит обычный сбор за игру и в первые 5 минут может отменить отклик бесплатно.</li>
+<li>«Мы уже в клубе»: объявление можно дать только находясь в клубе. Откликнувшийся должен прийти и подтвердить приход по QR автора за 40 минут.</li>
+<li>«Собираем компанию»: встреча сегодня, приход подтверждается по QR автора от 30 минут до встречи и до 15 минут после. Автор тоже отмечается в клубе. Если автор не отметился и никто не пришёл, откликнувшимся возвращается сбор без неявки, а автору плата за найденных игроков не возвращается.</li>
+<li>SOS: через 15 минут после начала игры отметившийся игрок может позвать замену. Места не пришедших освобождаются, им засчитывается неявка. Оплатив место для замены, игрок получает залог замены, если та не придёт.</li>
+<li>Не подтвердил приход вовремя — место освобождается, сбор не возвращается, засчитывается неявка.</li>
+</ul>
+<h2 id="ru-8">8. Для клубов</h2>
+<ul>
+<li>Подключить клуб может только его владелец или человек, которого владелец на это уполномочил. Данные клуба (название, адрес, место на карте, телефон, фото) должны быть настоящими.</li>
+<li>Владелец сам решает, кого сделать администратором клуба в Gomi, и отвечает за их действия.</li>
+<li>Клуб отвечает за свои игры: что они пройдут в указанное время, по указанной цене и с нужным количеством мест. Не можете провести игру — отмените её в приложении: игрокам вернётся сбор.</li>
+<li>Первые 6 месяцев после подключения — бесплатно, дальше — подписка по ценам в «Мой клуб → Подписка». Без подписки новые игры создать нельзя.</li>
+<li>Мы можем отказать в подключении или закрыть клуб, если данные ложные, игры не проводятся или на клуб много обоснованных жалоб.</li>
+</ul>
+<h2 id="ru-9">9. Жалобы и меры</h2>
+<ul>
+<li>Пожаловаться на игрока можно в его меню («Пожаловаться»); там же его можно скрыть. Жалобу видит только администрация Gomi, игрок не узнаёт, кто пожаловался.</li>
+<li>Мы рассматриваем жалобы в течение суток.</li>
+<li>Меры за нарушения: сброс ника, удаление фото, закрытие записи на 30 дней, а за тяжёлые или повторные нарушения — удаление аккаунта. Деньги на балансе удалённого за нарушения аккаунта не возвращаются.</li>
+<li>Не согласны с решением — напишите нам на <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a>, мы пересмотрим его.</li>
+</ul>
+<h2 id="ru-10">10. Ответственность</h2>
+<ul>
+<li>Gomi помогает договориться об игре, но не отвечает за то, что происходит в клубе: за помещение, технику, цены и действия клуба, а также за поведение других игроков. Претензии к услугам клуба — к клубу.</li>
+<li>Мы стараемся, чтобы приложение работало без сбоев, но не можем этого гарантировать. Если из-за ошибки Gomi вы не смогли отметиться или записаться, напишите нам: мы вернём сбор и снимем неявку.</li>
+<li>Наша ответственность перед вами ограничена суммой сборов, которые вы заплатили Gomi за последние 3 месяца, если закон не требует иного.</li>
+</ul>
+<h2 id="ru-11">11. Удаление аккаунта</h2>
+<p>Удалить аккаунт можно в любой момент: «Профиль» → «Личные данные» → «Удалить аккаунт». Будущие записи отменяются, деньги на балансе пропадают и не возвращаются. Что мы храним после удаления, написано в Политике конфиденциальности.</p>
+<h2 id="ru-12">12. Изменения соглашения</h2>
+<p>Мы можем менять соглашение — например, когда появляются новые возможности или оплата картой. О важных изменениях сообщим в приложении. Новая редакция действует с даты, указанной в ней; продолжая пользоваться Gomi, вы её принимаете. Не согласны — можете удалить аккаунт.</p>
+<h2 id="ru-13">13. Споры и связь</h2>
+<p>Соглашение регулируется законодательством Республики Узбекистан. Вопросы и претензии пишите на <a href="mailto:iskandarnishonov@yandex.com">iskandarnishonov@yandex.com</a> или через «Профиль» → «Написать в поддержку» — ответим в течение 7 дней. Если договориться не получится, спор решает суд по законодательству Республики Узбекистан.</p>
+</section>
+
+<nav><a href="#ru">Русский</a><a href="#uz">Oʻzbekcha</a><a class="other" href="../privacy/">Политика · Siyosat</a></nav>
+</body>
+</html>
